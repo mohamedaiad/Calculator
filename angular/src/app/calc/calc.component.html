@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc.component.css">
+    </head>
+    <body>
+        <div class = "calculator-grid">
+            <div class="output">
+                <div class="previous-operand">{{previous}}</div>
+                <div class="current-operand">{{current}}</div>
+            </div>
+            <button (click) = "percentage()" class="operation">%</button>
+            <button (click) = "clearAll()" class="operation">CE</button>
+            <button (click) = "clearAll()" class="operation">C</button>
+            <button (click) = "delete()" class="operation"><i class="fas fa-backspace"></i></button>
+            <button (click) = "invert()" class="operation"><sup>1</sup>/<sub>x</sub></button>
+            <button (click) = "square()" class="operation">x²</button>
+            <button (click) = "root()" class="operation"><i class="fas fa-square-root-alt" style="font-size:18px;"></i></button>
+            <button (click) = "appendOperation('/')" class="operation">÷</button>
+            <button (click) = "appendNumber('7')" class="number">7</button>
+            <button (click) = "appendNumber('8')" class="number">8</button>
+            <button (click) = "appendNumber('9')" class="number">9</button>
+            <button (click) = "appendOperation('*')" class="operation">&#215;</button>
+            <button (click) = "appendNumber('4')" class="number">4</button>
+            <button (click) = "appendNumber('5')" class="number">5</button>
+            <button (click) = "appendNumber('6')" class="number">6</button>
+            <button (click) = "appendOperation('-')" class="operation">&#8722;</button>
+            <button (click) = "appendNumber('1')" class="number">1</button>
+            <button (click) = "appendNumber('2')" class="number">2</button>
+            <button (click) = "appendNumber('3')" class="number">3</button>
+            <button (click) = "appendOperation('+')" class="operation">+</button>
+            <button (click) = "negative()" class="number">+/-</button>
+            <button (click) = "appendNumber('0')" class="number">0</button>
+            <button (click) = "appendNumber('.')" class="number">.</button>
+            <button (click) = "equal()" class="equal">=</button>
+        </div>
+        
+    </body>
+</html>
+
