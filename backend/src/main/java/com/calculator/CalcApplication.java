@@ -1,4 +1,4 @@
-package com.example.calc;
+package com.calculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
